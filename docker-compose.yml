@@ -1,0 +1,7 @@
+services:
+  ejercicio:
+    image: eclipse-temurin:21
+    working_dir: /app
+    volumes:
+      - ./exercises/${CARPETA}:/app
+    command: sh -c "javac ${CLASE}.java && java ${CLASE}"

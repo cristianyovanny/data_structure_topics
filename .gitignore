@@ -1,0 +1,28 @@
+# ─── Java ───────────────────────────────────────────────────
+# Archivos compilados generados por javac
+**/*.class
+
+# ─── Docker ─────────────────────────────────────────────────
+# Variables de entorno locales (si usas archivo .env)
+.env
+
+# ─── Sistema operativo ──────────────────────────────────────
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# ─── Editores ───────────────────────────────────────────────
+# VSCode
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.classpath
+.project
+.settings/
