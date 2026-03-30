@@ -57,12 +57,13 @@ $env:CLASE="ManejoColisiones"; docker compose run --rm ejercicio
 
 ```
 mis-ejercicios/
-├── exercise/
-│       ├── HashBasico.java
-│       ├── manejo-colisiones.java
-│       └── ... (demás ejercicios)
 ├── docker-compose.yml
-└── README.md
+├── README.md
+└── exercises/
+    ├── hash-basico/
+    │   └── HashBasico.java
+    └── manejo-colisiones/
+        └── ManejoColisiones.java
 ```
 
 ---
@@ -83,7 +84,7 @@ mis-ejercicios/
 ### HashBasico
 
 ```bash
-CLASE=HashBasico docker compose run --rm ejercicio
+CARPETA=hash-basico CLASE=HashBasico docker compose run --rm ejercicio
 ```
 
 ```
@@ -96,7 +97,7 @@ Búsqueda de "nombre": Juan
 ### ManejoColisiones
 
 ```bash
-CLASE=ManejoColisiones docker compose run --rm ejercicio
+CARPETA=manejo-colisiones CLASE=ManejoColisiones docker compose run --rm ejercicio
 ```
 
 ```
