@@ -28,25 +28,25 @@ Cada ejercicio es un archivo `.java` independiente que se compila y ejecuta dent
 
 ```bash
 # Linux / Mac
-CLASE=NombreDeLaClase docker compose run --rm ejercicio
+FOLDER=FolderName CLASS=ClassName docker compose run --rm ejercicio
 
 # Windows (PowerShell)
-$env:CLASE="NombreDeLaClase"; docker compose run --rm ejercicio
+$env:FOLDER=FolderName CLASS="ClassName"; docker compose run --rm ejercicio
 
 # Windows (CMD)
-set CLASE=NombreDeLaClase && docker compose run --rm ejercicio
+set FOLDER=FolderName CLASS=ClassName && docker compose run --rm ejercicio
 ```
 
 ### Ejemplos concretos
 
 ```bash
 # Linux / Mac
-CLASE=HashBasico docker compose run --rm ejercicio
-CLASE=ManejoColisiones docker compose run --rm ejercicio
+FOLDER=basic-hash CLASS=BasicHash docker compose run --rm ejercicio
+FOLDER=collision-handlong/chaining CLASS=Chaining docker compose run --rm ejercicio
 
 # Windows (PowerShell)
-$env:CLASE="HashBasico"; docker compose run --rm ejercicio
-$env:CLASE="ManejoColisiones"; docker compose run --rm ejercicio
+$env:FOLDER=collision-handlong/chaining CLASS="BasicHash"; docker compose run --rm ejercicio
+$env:FOLDER=collision-handlong/chaining CLASS="Chaining"; docker compose run --rm ejercicio
 ```
 
 > **Importante:** El valor de `CLASE` debe coincidir exactamente con el nombre del archivo `.java` y el nombre de la clase dentro del archivo. Java distingue mayúsculas y minúsculas.

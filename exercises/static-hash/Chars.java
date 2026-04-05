@@ -1,4 +1,4 @@
-public class Char {
+public class Chars {
     public static void main(String[] args) {
         String name = "Pedro"; //
         int  hash = 0;
